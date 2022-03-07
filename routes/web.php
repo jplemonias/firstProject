@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/fr', function () {
     return view('bienvenu');
 });
+
+Route::get('/it', function () {
+    return view('benvenuto');
+});
