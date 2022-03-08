@@ -28,27 +28,19 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/', function (){ return'Homepage'; } );
+// Route::get('/', function (){ return'Homepage'; } );
 
-Route::get('/product',  function (){ return'Liste des produits'; });
+// Route::get('/product',  function (){ return'Liste des produits'; });
 
-Route::get('/product/{id}', function (){ return'Fiche du produit'.request('id'); });
+// Route::get('/product/{id}', function (){ return'Fiche du produit'.request('id'); });
 
-Route::get('/card', function (){ return'Panier'; });
+// Route::get('/card', function (){ return'Panier'; });
 
 
-// Route::get('/', [HomeController::class,  'goHome']);
+Route::get('/', [HomeController::class,  'goHome']);
 
-// Route::get('/product', [ProductController::class,  'goListe']
-// );
+Route::get('/product', [ProductController::class,  'goListe']);
 
-// Route::get('/product/{id}', [ProductController::class,  'goProductInfo']
-// // function () {
-// //     return view('ProductController');
-// // }
-// );
-// Route::get('/card', [CartController::class,  'goCard']
-// // function () {
-// //     return view('CartController');
-// // }
-// );
+Route::get('/product/{id}', [ProductController::class,  'goProductInfo']);
+
+Route::get('/card', [CartController::class,  'goCard']);
