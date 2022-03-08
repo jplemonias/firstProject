@@ -15,9 +15,9 @@ use App\Http\Controllers\CartController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/en', function () {
+    return view('welcome');
+});
 
 Route::get('/fr', function () {
     return view('bienvenu');
@@ -26,7 +26,6 @@ Route::get('/fr', function () {
 Route::get('/it', function () {
     return view('benvenuto');
 });
-
 
 // Route::get('/', function (){ return'Homepage'; } );
 
@@ -43,3 +42,5 @@ Route::get('/product', [ProductController::class,  'goListe']);
 Route::get('/product/{id}', [ProductController::class,  'goProductInfo']);
 
 Route::get('/cart', [CartController::class,  'goCart']);
+
+?>

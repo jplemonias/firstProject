@@ -8,7 +8,7 @@ class CartController extends Controller
 {
     public function goCart()
     {
-        // return "Panier";
         return view("cart");
     }
 }
+?>
