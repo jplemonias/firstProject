@@ -8,18 +8,13 @@ class ProductController extends Controller
 {
     public function goListe()
     {
-        return "Liste des produits";
+        // return "Liste des produits";
+        return view("product-list");
     }
-        /**
-         * TXT.
-         *
-         * @param  \Illuminate\Http\Request  $request
-         * @param  string  $id
-         * @return \Illuminate\Http\Response
-         */
     public function goProductInfo($id)
     {
-        return "Fiche du produit ".$id;
+        // return "Fiche du produit ".$id;
+        return view("product-details",  ['id' => $id]);
     }
 }
 ?>

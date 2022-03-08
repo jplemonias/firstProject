@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     public function goHome()
     {
-        return "Homepage";
+        return view("homepage");
     }
 }
 ?>
