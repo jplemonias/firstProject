@@ -10,7 +10,7 @@ class CartController extends Controller
     {
         return "Panier";
         /*view('user.profile', [
-            'user' => User::findOrFail($id)
+            'user' => Controller::findOrFail($id)
         ]);*/
     }
 }
